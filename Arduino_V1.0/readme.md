@@ -3,4 +3,4 @@ Cette version n'intègre pas de régulateur de tension.
 
 
 <!-- AUTEUR : Nicolas LE GUERROUE -->
-<!-- DATE : 20/01/2024 -->
+<!-- DATE : 2023 -->
