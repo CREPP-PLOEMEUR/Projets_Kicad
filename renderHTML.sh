@@ -23,8 +23,8 @@ do
     author_line=$(grep "<!-- AUTEUR" "$readme_file")
     author_name=$(echo "$author_line" | cut -d ':' -f2 | cut -d '-' -f1 )
 
-    date_line=$(grep "<!--- DATE" "$readme_file")
-    date_value=$(echo "$date_line" | sed -e 's/<!--- DATE : //' -e 's/ -->//')
+    date_line=$(grep "<!-- DATE" "$readme_file")
+    date_value=$(echo "$date_line" | cut -d ':' -f2 | cut -d '-' -f1 )
 
     
     # Vérifier si le fichier README.md existe
