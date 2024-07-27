@@ -6,8 +6,8 @@ output_file="render_HTML.html"
 # Démarrer le contenu du body
 echo "<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css' rel='stylesheet'>
 <div class='container mt-5'>
-    <h1 class='text-center mb-4'>Simulation KiCad</h1>" > $output_file
-echo "<p style='font-size:1.2em;'>Cette page contralise des simulations réalisées sous Kicad.</p>" >> $output_file    
+    <h1 class='text-center mb-4'>Projets KiCad</h1>" > $output_file
+echo "<p style='font-size:1.2em;'>Cette page contralise des projets réalisées sous Kicad lors des ateliers de Conception Electronique.</p>" >> $output_file    
 
 # Parcourir tous les dossiers du répertoire courant
 for dir in */
@@ -15,8 +15,8 @@ do
     dir=${dir%/}
     readme_file="$dir/readme.md"
     zip_file="${dir}.zip"
-    github_url="https://github.com/CREPP-PLOEMEUR/Simulations_KICAD/tree/main/$dir"
-    download_url="https://github.com/CREPP-PLOEMEUR/Simulations_KICAD/raw/main/${dir}.zip"
+    github_url="https://github.com/CREPP-PLOEMEUR/Projets_Kicad/tree/main/$dir"
+    download_url="https://github.com/CREPP-PLOEMEUR/Projets_Kicad/raw/main/${dir}.zip"
 
     
     # Vérifier si le fichier README.md existe
