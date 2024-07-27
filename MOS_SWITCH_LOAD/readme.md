@@ -1,0 +1,1 @@
+Un module pour commuter une alimentation sur le rail positif.

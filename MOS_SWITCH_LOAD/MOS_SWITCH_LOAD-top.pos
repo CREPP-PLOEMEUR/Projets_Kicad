@@ -1,0 +1,13 @@
+### Footprint positions - created on 2024-03-15T15:09:38+0100 ###
+### Printed by KiCad version 8.0.0
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val             Package                                                 PosX       PosY       Rot  Side
+J1        Conn_01x02_Pin  TerminalBlock_TE_282834-2_1x02_P2.54mm_Horizontal    28.9000    14.7400  -90.0000  top
+J2        Conn_01x02_Pin  TerminalBlock_TE_282834-2_1x02_P2.54mm_Horizontal     5.4500    13.9000   90.0000  top
+J3        Conn_01x02_Pin  TerminalBlock_TE_282834-2_1x02_P2.54mm_Horizontal     9.5800     5.4000    0.0000  top
+Q3        2N7000          TO-92_Inline                                         18.3700     7.8100  180.0000  top
+Q4        IRF4905         TO-220-3_Vertical                                    16.4000    14.6500    0.0000  top
+R1        100k            R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal     23.2600    11.5500  180.0000  top
+R2        100k            R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal     15.4400     3.3000    0.0000  top
+## End

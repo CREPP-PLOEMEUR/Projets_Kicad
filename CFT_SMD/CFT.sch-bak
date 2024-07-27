@@ -1,0 +1,656 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xx:74HC123 U1
+U 1 1 5FB2AEBE
+P 4100 3150
+F 0 "U1" H 4100 3617 50  0000 C CNN
+F 1 "74HC123" H 4100 3526 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 4100 3150 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT123.pdf" H 4100 3150 50  0001 C CNN
+	1    4100 3150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4600 3350
+$Comp
+L Device:R R1
+U 1 1 5FB2C302
+P 2900 2750
+F 0 "R1" H 2830 2704 50  0000 R CNN
+F 1 "R" H 2830 2795 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2830 2750 50  0001 C CNN
+F 3 "~" H 2900 2750 50  0001 C CNN
+	1    2900 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5FB2CA3F
+P 3150 3050
+F 0 "C1" V 2898 3050 50  0000 C CNN
+F 1 "0.47u" V 2989 3050 50  0000 C CNN
+F 2 "Capacitor_THT:C_Radial_D4.0mm_H5.0mm_P1.50mm" H 3188 2900 50  0001 C CNN
+F 3 "~" H 3150 3050 50  0001 C CNN
+	1    3150 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 5FB2D8C3
+P 2600 2700
+F 0 "D1" V 2554 2780 50  0000 L CNN
+F 1 "D" V 2645 2780 50  0000 L CNN
+F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 2600 2700 50  0001 C CNN
+F 3 "~" H 2600 2700 50  0001 C CNN
+	1    2600 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5FB2DCC4
+P 3600 3250
+F 0 "#PWR02" H 3600 3000 50  0001 C CNN
+F 1 "GND" V 3605 3122 50  0000 R CNN
+F 2 "" H 3600 3250 50  0001 C CNN
+F 3 "" H 3600 3250 50  0001 C CNN
+	1    3600 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 5FB32840
+P 2900 2450
+F 0 "RV1" H 3100 2600 50  0000 R CNN
+F 1 "R_POT" H 3300 2500 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical" H 2900 2450 50  0001 C CNN
+F 3 "~" H 2900 2450 50  0001 C CNN
+	1    2900 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR01
+U 1 1 5FB30B8D
+P 2900 2200
+F 0 "#PWR01" H 2900 2050 50  0001 C CNN
+F 1 "VCC" H 2915 2373 50  0000 C CNN
+F 2 "" H 2900 2200 50  0001 C CNN
+F 3 "" H 2900 2200 50  0001 C CNN
+	1    2900 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 2450 3100 2450
+Wire Wire Line
+	3100 2450 3100 2600
+Wire Wire Line
+	3100 2600 2900 2600
+Connection ~ 2900 2600
+Wire Wire Line
+	3600 3050 3300 3050
+Wire Wire Line
+	2900 2900 2900 2950
+Wire Wire Line
+	2900 3050 3000 3050
+Wire Wire Line
+	3600 2950 2900 2950
+Connection ~ 2900 2950
+Wire Wire Line
+	2900 2950 2900 3050
+$Comp
+L power:VCC #PWR03
+U 1 1 5FB3803C
+P 4100 3650
+F 0 "#PWR03" H 4100 3500 50  0001 C CNN
+F 1 "VCC" H 4115 3823 50  0000 C CNN
+F 2 "" H 4100 3650 50  0001 C CNN
+F 3 "" H 4100 3650 50  0001 C CNN
+	1    4100 3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2900 2200 2900 2250
+Wire Wire Line
+	2900 2250 2600 2250
+Wire Wire Line
+	2600 2250 2600 2550
+Connection ~ 2900 2250
+Wire Wire Line
+	2900 2250 2900 2300
+Wire Wire Line
+	2600 2850 2600 2950
+Wire Wire Line
+	2600 2950 2900 2950
+$Comp
+L Device:R R2
+U 1 1 5FB40FDF
+P 4750 2950
+F 0 "R2" V 4543 2950 50  0000 C CNN
+F 1 "1k" V 4634 2950 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4680 2950 50  0001 C CNN
+F 3 "~" H 4750 2950 50  0001 C CNN
+	1    4750 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5FB41610
+P 5000 3200
+F 0 "C2" H 5115 3246 50  0000 L CNN
+F 1 "1n" H 5115 3155 50  0000 L CNN
+F 2 "Capacitor_THT:C_Radial_D4.0mm_H5.0mm_P1.50mm" H 5038 3050 50  0001 C CNN
+F 3 "~" H 5000 3200 50  0001 C CNN
+	1    5000 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5FB41A7E
+P 5000 3350
+F 0 "#PWR04" H 5000 3100 50  0001 C CNN
+F 1 "GND" H 5005 3177 50  0000 C CNN
+F 2 "" H 5000 3350 50  0001 C CNN
+F 3 "" H 5000 3350 50  0001 C CNN
+	1    5000 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 2950 5000 2950
+Wire Wire Line
+	5000 2950 5000 3050
+$Comp
+L Connector:Conn_01x02_Female J1
+U 1 1 5FB445EE
+P 2050 3550
+F 0 "J1" H 2000 3600 50  0000 C CNN
+F 1 "In_sensor" H 2100 3350 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 2050 3550 50  0001 C CNN
+F 3 "~" H 2050 3550 50  0001 C CNN
+	1    2050 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5FB462C8
+P 2300 2900
+F 0 "R3" H 2230 2854 50  0000 R CNN
+F 1 "10k" H 2230 2945 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2230 2900 50  0001 C CNN
+F 3 "~" H 2300 2900 50  0001 C CNN
+	1    2300 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2600 2250 2300 2250
+Wire Wire Line
+	2300 2250 2300 2350
+Connection ~ 2600 2250
+Wire Wire Line
+	2300 3050 2300 3350
+Wire Wire Line
+	2300 3450 2250 3450
+$Comp
+L power:GND #PWR05
+U 1 1 5FB4AF2E
+P 2300 3700
+F 0 "#PWR05" H 2300 3450 50  0001 C CNN
+F 1 "GND" H 2305 3527 50  0000 C CNN
+F 2 "" H 2300 3700 50  0001 C CNN
+F 3 "" H 2300 3700 50  0001 C CNN
+	1    2300 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 3550 2250 3550
+Wire Wire Line
+	3600 3350 2300 3350
+Connection ~ 2300 3350
+Wire Wire Line
+	2300 3350 2300 3450
+$Comp
+L Connector:Conn_01x02_Female J2
+U 1 1 5FB4EE2A
+P 2100 2250
+F 0 "J2" H 2050 2300 50  0000 C CNN
+F 1 "in_power" H 2150 2050 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 2100 2250 50  0001 C CNN
+F 3 "~" H 2100 2250 50  0001 C CNN
+	1    2100 2250
+	-1   0    0    1   
+$EndComp
+Connection ~ 2300 2250
+$Comp
+L power:GND #PWR06
+U 1 1 5FB4F765
+P 2300 2150
+F 0 "#PWR06" H 2300 1900 50  0001 C CNN
+F 1 "GND" V 2305 2022 50  0000 R CNN
+F 2 "" H 2300 2150 50  0001 C CNN
+F 3 "" H 2300 2150 50  0001 C CNN
+	1    2300 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 74xx:74HC123 U1
+U 3 1 5FB5E4B9
+P 1550 2900
+F 0 "U1" H 1780 2946 50  0000 L CNN
+F 1 "74HC123" H 1780 2855 50  0000 L CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 1550 2900 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT123.pdf" H 1550 2900 50  0001 C CNN
+	3    1550 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 2350 1550 2350
+Wire Wire Line
+	1550 2350 1550 2400
+Connection ~ 2300 2350
+Wire Wire Line
+	2300 2350 2300 2750
+Wire Wire Line
+	2300 3550 2300 3650
+Wire Wire Line
+	1550 3650 1550 3400
+Connection ~ 2300 3650
+Wire Wire Line
+	2300 3650 2300 3700
+Wire Wire Line
+	1550 3650 2300 3650
+Connection ~ 5000 2950
+$Comp
+L Connector:Conn_01x05_Female J3
+U 1 1 5FBA60CA
+P 5650 2300
+F 0 "J3" V 5588 2012 50  0000 R CNN
+F 1 "M1" V 5497 2012 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 5650 2300 50  0001 C CNN
+F 3 "~" H 5650 2300 50  0001 C CNN
+	1    5650 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR07
+U 1 1 5FBAE67B
+P 5350 2750
+F 0 "#PWR07" H 5350 2600 50  0001 C CNN
+F 1 "VCC" H 5365 2923 50  0000 C CNN
+F 2 "" H 5350 2750 50  0001 C CNN
+F 3 "" H 5350 2750 50  0001 C CNN
+	1    5350 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5FBB232E
+P 5350 3500
+F 0 "#PWR08" H 5350 3250 50  0001 C CNN
+F 1 "GND" H 5355 3327 50  0000 C CNN
+F 2 "" H 5350 3500 50  0001 C CNN
+F 3 "" H 5350 3500 50  0001 C CNN
+	1    5350 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5450 2500 5450 2750
+Wire Wire Line
+	5450 2750 5350 2750
+$Comp
+L Connector:Conn_01x05_Female J4
+U 1 1 5FBB4933
+P 6600 2300
+F 0 "J4" V 6538 2012 50  0000 R CNN
+F 1 "M2" V 6447 2012 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 6600 2300 50  0001 C CNN
+F 3 "~" H 6600 2300 50  0001 C CNN
+	1    6600 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x05_Female J5
+U 1 1 5FBB5513
+P 7500 2300
+F 0 "J5" V 7438 2012 50  0000 R CNN
+F 1 "M3" V 7347 2012 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 7500 2300 50  0001 C CNN
+F 3 "~" H 7500 2300 50  0001 C CNN
+	1    7500 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x05_Female J6
+U 1 1 5FBB5C13
+P 8400 2300
+F 0 "J6" V 8338 2012 50  0000 R CNN
+F 1 "M4" V 8247 2012 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 8400 2300 50  0001 C CNN
+F 3 "~" H 8400 2300 50  0001 C CNN
+	1    8400 2300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6400 2500 6400 2750
+Wire Wire Line
+	6400 2750 5450 2750
+Connection ~ 5450 2750
+Wire Wire Line
+	7300 2500 7300 2750
+Wire Wire Line
+	8200 2500 8200 2750
+Wire Wire Line
+	8200 2750 7300 2750
+Connection ~ 7300 2750
+Wire Wire Line
+	5550 2950 5550 2500
+Wire Wire Line
+	5000 2950 5550 2950
+Wire Wire Line
+	5650 2500 5650 3150
+Wire Wire Line
+	5650 3150 6500 3150
+Wire Wire Line
+	6600 2500 6600 3150
+Wire Wire Line
+	7400 3150 7400 2500
+Wire Wire Line
+	7500 2500 7500 3150
+Wire Wire Line
+	7500 3150 8300 3150
+Wire Wire Line
+	8300 3150 8300 2500
+Wire Wire Line
+	5350 3500 5750 3500
+Wire Wire Line
+	5750 3500 5750 2500
+Wire Wire Line
+	6700 3500 5750 3500
+Connection ~ 5750 3500
+Wire Wire Line
+	7600 2500 7600 3500
+Wire Wire Line
+	8500 2500 8500 3500
+Wire Wire Line
+	8500 3500 7600 3500
+Connection ~ 7600 3500
+$Comp
+L Transistor_BJT:BC337 Q1
+U 1 1 5FBC4C03
+P 5850 4300
+F 0 "Q1" V 6085 4300 50  0000 C CNN
+F 1 "BC337" V 6176 4300 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6050 4225 50  0001 L CIN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337.pdf" H 5850 4300 50  0001 L CNN
+	1    5850 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR09
+U 1 1 5FBC6B22
+P 5350 3750
+F 0 "#PWR09" H 5350 3600 50  0001 C CNN
+F 1 "VCC" H 5365 3923 50  0000 C CNN
+F 2 "" H 5350 3750 50  0001 C CNN
+F 3 "" H 5350 3750 50  0001 C CNN
+	1    5350 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5FBC8012
+P 5850 3950
+F 0 "R4" V 5643 3950 50  0000 C CNN
+F 1 "1k" V 5734 3950 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5780 3950 50  0001 C CNN
+F 3 "~" H 5850 3950 50  0001 C CNN
+	1    5850 3950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5FBC8921
+P 6200 4400
+F 0 "R5" V 5993 4400 50  0000 C CNN
+F 1 "1k" V 6084 4400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6130 4400 50  0001 C CNN
+F 3 "~" H 6200 4400 50  0001 C CNN
+	1    6200 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5FBCA193
+P 6350 3950
+F 0 "D2" V 6389 3832 50  0000 R CNN
+F 1 "LED" V 6298 3832 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 6350 3950 50  0001 C CNN
+F 3 "~" H 6350 3950 50  0001 C CNN
+	1    6350 3950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6350 4100 6350 4400
+Wire Wire Line
+	6350 3750 6350 3800
+Wire Wire Line
+	5850 2500 5850 3800
+$Comp
+L power:GND #PWR010
+U 1 1 5FBD599D
+P 5650 4400
+F 0 "#PWR010" H 5650 4150 50  0001 C CNN
+F 1 "GND" H 5655 4227 50  0000 C CNN
+F 2 "" H 5650 4400 50  0001 C CNN
+F 3 "" H 5650 4400 50  0001 C CNN
+	1    5650 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:BC337 Q2
+U 1 1 5FBDC793
+P 6800 4300
+F 0 "Q2" V 7035 4300 50  0000 C CNN
+F 1 "BC337" V 7126 4300 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7000 4225 50  0001 L CIN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337.pdf" H 6800 4300 50  0001 L CNN
+	1    6800 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5FBDC799
+P 6800 3950
+F 0 "R6" V 6593 3950 50  0000 C CNN
+F 1 "1k" V 6684 3950 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6730 3950 50  0001 C CNN
+F 3 "~" H 6800 3950 50  0001 C CNN
+	1    6800 3950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5FBDC79F
+P 7150 4400
+F 0 "R7" V 6943 4400 50  0000 C CNN
+F 1 "1k" V 7034 4400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7080 4400 50  0001 C CNN
+F 3 "~" H 7150 4400 50  0001 C CNN
+	1    7150 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5FBDC7A5
+P 7300 3950
+F 0 "D3" V 7339 3832 50  0000 R CNN
+F 1 "LED" V 7248 3832 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 7300 3950 50  0001 C CNN
+F 3 "~" H 7300 3950 50  0001 C CNN
+	1    7300 3950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7300 4100 7300 4400
+Wire Wire Line
+	7300 3750 7300 3800
+$Comp
+L power:GND #PWR011
+U 1 1 5FBDC7AF
+P 6600 4400
+F 0 "#PWR011" H 6600 4150 50  0001 C CNN
+F 1 "GND" H 6605 4227 50  0000 C CNN
+F 2 "" H 6600 4400 50  0001 C CNN
+F 3 "" H 6600 4400 50  0001 C CNN
+	1    6600 4400
+	0    1    1    0   
+$EndComp
+Connection ~ 6400 2750
+Wire Wire Line
+	6400 2750 7300 2750
+Wire Wire Line
+	6500 2500 6500 3150
+$Comp
+L Transistor_BJT:BC337 Q3
+U 1 1 5FC02874
+P 7700 4300
+F 0 "Q3" V 7935 4300 50  0000 C CNN
+F 1 "BC337" V 8026 4300 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7900 4225 50  0001 L CIN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337.pdf" H 7700 4300 50  0001 L CNN
+	1    7700 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5FC0287A
+P 7700 3950
+F 0 "R8" V 7493 3950 50  0000 C CNN
+F 1 "1k" V 7584 3950 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7630 3950 50  0001 C CNN
+F 3 "~" H 7700 3950 50  0001 C CNN
+	1    7700 3950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5FC02880
+P 8050 4400
+F 0 "R9" V 7843 4400 50  0000 C CNN
+F 1 "1k" V 7934 4400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7980 4400 50  0001 C CNN
+F 3 "~" H 8050 4400 50  0001 C CNN
+	1    8050 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 5FC02886
+P 8200 3950
+F 0 "D4" V 8239 3832 50  0000 R CNN
+F 1 "LED" V 8148 3832 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 8200 3950 50  0001 C CNN
+F 3 "~" H 8200 3950 50  0001 C CNN
+	1    8200 3950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8200 4100 8200 4400
+Wire Wire Line
+	8200 3750 8200 3800
+Wire Wire Line
+	7700 2500 7700 3800
+$Comp
+L power:GND #PWR012
+U 1 1 5FC02890
+P 7500 4400
+F 0 "#PWR012" H 7500 4150 50  0001 C CNN
+F 1 "GND" H 7505 4227 50  0000 C CNN
+F 2 "" H 7500 4400 50  0001 C CNN
+F 3 "" H 7500 4400 50  0001 C CNN
+	1    7500 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:BC337 Q4
+U 1 1 5FC05D85
+P 8600 4300
+F 0 "Q4" V 8835 4300 50  0000 C CNN
+F 1 "BC337" V 8926 4300 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 8800 4225 50  0001 L CIN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337.pdf" H 8600 4300 50  0001 L CNN
+	1    8600 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5FC05D8B
+P 8600 3950
+F 0 "R10" V 8393 3950 50  0000 C CNN
+F 1 "1k" V 8484 3950 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 8530 3950 50  0001 C CNN
+F 3 "~" H 8600 3950 50  0001 C CNN
+	1    8600 3950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5FC05D91
+P 8950 4400
+F 0 "R11" V 8743 4400 50  0000 C CNN
+F 1 "1k" V 8834 4400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 8880 4400 50  0001 C CNN
+F 3 "~" H 8950 4400 50  0001 C CNN
+	1    8950 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D5
+U 1 1 5FC05D97
+P 9100 3950
+F 0 "D5" V 9139 3832 50  0000 R CNN
+F 1 "LED" V 9048 3832 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 9100 3950 50  0001 C CNN
+F 3 "~" H 9100 3950 50  0001 C CNN
+	1    9100 3950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9100 4100 9100 4400
+Wire Wire Line
+	9100 3750 9100 3800
+Wire Wire Line
+	8600 2500 8600 3800
+$Comp
+L power:GND #PWR013
+U 1 1 5FC05DA1
+P 8400 4400
+F 0 "#PWR013" H 8400 4150 50  0001 C CNN
+F 1 "GND" H 8405 4227 50  0000 C CNN
+F 2 "" H 8400 4400 50  0001 C CNN
+F 3 "" H 8400 4400 50  0001 C CNN
+	1    8400 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5350 3750 9100 3750
+Wire Wire Line
+	6600 3150 7400 3150
+Wire Wire Line
+	6700 2500 6700 3500
+Connection ~ 6700 3500
+Wire Wire Line
+	6700 3500 7600 3500
+Wire Wire Line
+	6800 2500 6800 3800
+$EndSCHEMATC
