@@ -19,7 +19,7 @@ do
     download_url="https://github.com/CREPP-PLOEMEUR/Projets_Kicad/raw/main/${dir}.zip"
     img_file="$dir/img/img.png"
     img_github_url="https://github.com/CREPP-PLOEMEUR/Projets_Kicad/raw/main/$dir/img/img.png"
-    
+
     author_line=$(grep "<!-- AUTEUR" "$readme_file")
     author_name=$(echo "$author_line" | cut -d ':' -f2 | cut -d '-' -f1 )
 
@@ -39,6 +39,7 @@ do
             <div class='card-body'>
                 <p style='font-size:1.2em;'<b>$readme_text</b></p>
                 <p><strong>Auteur :</strong> $author_name</p>
+                <p><strong>Date :</strong> $date_value</p>
                 <img src='$img_github_url' class='img-fluid mb-3' alt='Image de $dir'>
                 <a href='$github_url' class='button button-secondary' target='_blank'><i class='fa-solid fa-eye'></i> Voir sur GitHub</a> <a href='$download_url' class='button button-primary' download><i class='fa-solid fa-download'></i> Télécharger</a>
             </div>
